@@ -10,7 +10,7 @@ using Microsoft.SqlServer.Server;
 
 namespace ConsoleSocketClient
 {
-    class Program
+    class ProgramClient
     {
         public static string dataReceiver = "";
         public static byte[] bytes = new byte[1024];

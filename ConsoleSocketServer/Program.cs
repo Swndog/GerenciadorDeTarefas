@@ -9,23 +9,18 @@ using System.Threading;
 
 namespace ConsoleSocketServer
 {
-    class ProgramGuardarCode
+    class ProgramServer
     {
+        public static IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
+        public static IPAddress ipAddress = ipHostInfo.AddressList[0];
+        public static IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
+        public static Socket socket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+
         public static string dataReceiver = null;
         static byte[] bytes = new Byte[1024];
 
-
         static void Main(string[] args)
         {
-            IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
-            IPAddress ipAddress = ipHostInfo.AddressList[0];
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
-
-            byte[] bytes = new Byte[1024];
-
-
-            Socket socket = new Socket(ipAddress.AddressFamily,
-                SocketType.Stream, ProtocolType.Tcp);
 
 
             try
