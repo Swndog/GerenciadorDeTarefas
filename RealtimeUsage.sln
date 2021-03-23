@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSocketClient", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleSocketServer", "ConsoleSocketServer\ConsoleSocketServer.csproj", "{6087C3B6-735C-4F4D-B7F3-E078C54AE486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{2478533C-3E26-4CBE-B459-329B61AA19F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAsp", "WebAsp\WebAsp.csproj", "{7075CE81-F68C-44C1-AE59-9E785C425236}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{6087C3B6-735C-4F4D-B7F3-E078C54AE486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6087C3B6-735C-4F4D-B7F3-E078C54AE486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6087C3B6-735C-4F4D-B7F3-E078C54AE486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2478533C-3E26-4CBE-B459-329B61AA19F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2478533C-3E26-4CBE-B459-329B61AA19F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2478533C-3E26-4CBE-B459-329B61AA19F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2478533C-3E26-4CBE-B459-329B61AA19F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7075CE81-F68C-44C1-AE59-9E785C425236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7075CE81-F68C-44C1-AE59-9E785C425236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7075CE81-F68C-44C1-AE59-9E785C425236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7075CE81-F68C-44C1-AE59-9E785C425236}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

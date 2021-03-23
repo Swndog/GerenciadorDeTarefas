@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RealtimeUsage.Domain;
+using Microsoft.VisualBasic;
+
 
 
 namespace RealtimeUsage.Repository
@@ -12,7 +14,6 @@ namespace RealtimeUsage.Repository
     public class RepositoryRealtimeUsage : IRealtimeUsage
     {
         //cpuCounter = new PerformanceCounter("Processor Information","% Processor Utility","_Total",true);
-
         PerformanceCounter UsageCPU = new PerformanceCounter("Processor Information", "% Processor Utility", "_Total", true);
         PerformanceCounter ramCounter = new PerformanceCounter("Memory", "Available MBytes");
 
@@ -29,7 +30,9 @@ namespace RealtimeUsage.Repository
 
         public float getUsageRAM(ClassRealtimeUsage classRealtimeUsage)
         {
-            classRealtimeUsage.UsageRAM = ramCounter.NextValue();
+            var totalMemoryBytes = new Microsoft.VisualBasic.Devices.ComputerInfo().TotalPhysicalMemory;
+            var totalMemoryMBytes = ((totalMemoryBytes / 1024) / 1024);
+            classRealtimeUsage.UsageRAM = totalMemoryMBytes - ramCounter.NextValue();
             return classRealtimeUsage.UsageRAM;
         }
     }

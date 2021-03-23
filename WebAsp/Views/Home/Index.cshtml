@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Gerenciador de tarefas multi-usuarios</h1>
+</div>
+
+
+<div class="container-fluid">
+    <section id="sobre">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                <span class="glyphicon glyphicon-ok text-primary"></span>
+                <h3>Máquina 1</h3>
+                <p class="text-muted">informações de máquina 1</p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome da máquina</th>
+                            <th scope="col">Uso da CPU</th>
+                            <th scope="col">Uso da Ram</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>@Model.machineName</td>
+                            <td>@Model.UsageCPU</td>
+                            <td>@Model.UsageRAM</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                <span class="glyphicon glyphicon-ok text-primary"></span>
+                <h3>Máquina 2</h3>
+                <p class="text-muted">informações de máquina 2</p>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome da máquina</th>
+                            <th scope="col">Uso da CPU</th>
+                            <th scope="col">Uso da Ram</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>@Model.machineName</td>
+                            <td>@Model.UsageCPU</td>
+                            <td>@Model.UsageRAM</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+</div>

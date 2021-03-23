@@ -57,8 +57,8 @@ namespace ConsoleSocketClient
                 while (ServerActive)
                 {
                     var msgBox = "Nome da maquina: " + classRealtimeUsage.machineName + "\n" +
-                                  "Uso da CPU: " + classRealtimeUsage.UsageCPU  + "% \n" +
-                                  "Uso da RAM: " + classRealtimeUsage.UsageRAM  + "MB \n";
+                                  "Uso da CPU: " + classRealtimeUsage.UsageCPU  + " % \n" +
+                                  "Uso da RAM: " + classRealtimeUsage.UsageRAM  + " MB \n";
 
 
                     byte[] msg = Encoding.ASCII.GetBytes(msgBox);//transforma a mensagem em byte|menor tamanho
